@@ -19,11 +19,13 @@ public class MainMenuScript : MonoBehaviour
 
     public void PlayButton()
     {
+        
         Debug.Log("player has noe to choose new or continue");
     }
 
     public void GoToOptions()
     {
+        SceneManager.LoadScene("Options");
         Debug.Log("Player went to options");
     }
 
