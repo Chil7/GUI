@@ -23,9 +23,9 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("player has noe to choose new or continue");
     }
 
-    public void GoToOptions()
+    public void SwitchScene(string _sceneName)
     {
-        SceneManager.LoadScene("Options");
+        SceneManager.LoadScene(_sceneName);
         Debug.Log("Player went to options");
     }
 
