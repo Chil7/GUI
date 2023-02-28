@@ -6,14 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class StartScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+   
     void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         
     }
@@ -21,5 +15,17 @@ public class StartScript : MonoBehaviour
     public void SwitchScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
+    }
+
+    public void StartNewGame()
+    {
+        SwitchScene("DummyGameScene");
+        Debug.Log("New game has started");
+    }
+
+    public void StartLoadGame()
+    {
+        SwitchScene("DummyGameScene");
+        Debug.Log("Load game has started");
     }
 }
