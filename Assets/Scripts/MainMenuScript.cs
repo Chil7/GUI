@@ -17,12 +17,6 @@ public class MainMenuScript : MonoBehaviour
         
     }
 
-    public void PlayButton()
-    {
-        
-        Debug.Log("player has noe to choose new or continue");
-    }
-
     public void SwitchScene(string _sceneName)
     {
         SceneManager.LoadScene(_sceneName);
