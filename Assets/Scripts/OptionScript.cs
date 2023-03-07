@@ -40,17 +40,4 @@ public class OptionScript : MonoBehaviour
         }
 
     }
-
-    public void GlitchyArt(string _bool)
-    {
-        if(_bool == "true")
-        {
-            anim.SetBool("GlitchArt", true);
-        }
-        else if (_bool == "false")
-        {
-            anim.SetBool("GlitchArt", false);
-        }
-
-    }
 }
