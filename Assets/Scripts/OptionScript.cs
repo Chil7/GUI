@@ -11,6 +11,8 @@ public class OptionScript : MonoBehaviour
 {
     private Animator anim;
 
+    [SerializeField] private GameObject audioPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +41,11 @@ public class OptionScript : MonoBehaviour
             SwitchScene(_sceneName);
         }
 
+    }
+
+    public void TogglePanel()
+    {
+        Debug.Log(audioPanel.activeSelf);
+        audioPanel.SetActive(!audioPanel.activeSelf);
     }
 }
