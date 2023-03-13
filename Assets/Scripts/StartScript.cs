@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class StartScript : MonoBehaviour
 {
-   
+    private Animator anim;
+
+    [SerializeField] private GameObject startDisplay;
+    [SerializeField] private GameObject loadDisplay;
+
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     public void SwitchScene(string _sceneName)
@@ -27,5 +31,15 @@ public class StartScript : MonoBehaviour
     {
         SwitchScene("DummyGameScene");
         Debug.Log("Load game has started");
+    }
+
+    public void Startup()
+    {
+        anim.SetTrigger("Start");
+    }
+
+    public void LoadMenu()
+    {
+        anim.SetTrigger("LoadMenu");
     }
 }

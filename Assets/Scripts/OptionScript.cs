@@ -45,7 +45,6 @@ public class OptionScript : MonoBehaviour
 
     public void TogglePanel()
     {
-        Debug.Log(audioPanel.activeSelf);
         audioPanel.SetActive(!audioPanel.activeSelf);
     }
 }
