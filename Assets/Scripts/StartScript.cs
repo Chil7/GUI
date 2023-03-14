@@ -8,8 +8,9 @@ public class StartScript : MonoBehaviour
 {
     private Animator anim;
 
-    [SerializeField] private GameObject startDisplay;
-    [SerializeField] private GameObject loadDisplay;
+    [SerializeField] private GameObject LoadFiles;
+    [SerializeField] private GameObject DeleteLoadFiles;
+    
 
     void Start()
     {
@@ -42,4 +43,7 @@ public class StartScript : MonoBehaviour
     {
         anim.SetTrigger("LoadMenu");
     }
+
+    //Scrollview purposes
+
 }
