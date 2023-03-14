@@ -8,8 +8,10 @@ public class StartScript : MonoBehaviour
 {
     private Animator anim;
 
-    [SerializeField] private GameObject LoadFiles;
-    [SerializeField] private GameObject DeleteLoadFiles;
+    [SerializeField] private RectTransform LoadFiles;
+    [SerializeField] private RectTransform DeleteLoadFiles;
+
+    [SerializeField] private ScrollRect scrollRect;
     
 
     void Start()
@@ -45,5 +47,17 @@ public class StartScript : MonoBehaviour
     }
 
     //Scrollview purposes
+    public void ScrollViewChange(string _gameObject)
+    {
+        if (_gameObject == "Load")
+        {
+            scrollRect.content = LoadFiles;
+        }
 
+        else if (_gameObject == "Delete")
+        {
+            scrollRect.content = DeleteLoadFiles;
+        }
+        
+    }
 }
